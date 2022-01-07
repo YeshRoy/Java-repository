@@ -1,0 +1,23 @@
+package com.javabasics.AccountBalance;
+
+public class Accountbalance {
+
+	double Balance = 20000;
+
+	public Accountbalance() {
+
+	}
+
+	public void withdraw(int amount) throws Insufficientbalanceexception {
+
+		if (Balance >= amount) {
+
+			System.out.println("Available balance:" + this.Balance);
+			System.out.println(amount + "withdrawn successfully");
+			System.out.println("remaining balance:" + this.Balance);
+		} else {
+//			System.out.println("Insufficient balance");
+			throw new Insufficientbalanceexception("Insufficient balance");
+		}
+	}
+}

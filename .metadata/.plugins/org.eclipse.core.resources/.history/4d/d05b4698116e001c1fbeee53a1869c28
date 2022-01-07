@@ -1,0 +1,28 @@
+package com.javabasics.AccountBalance;
+
+import java.util.Scanner;
+
+public class Accountbalance {
+
+	double Balance;
+
+	public Accountbalance(double balance) {
+		this.Balance = balance;
+	}
+
+	public void withdraw() {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("enter the amount");
+		double balance = scanner.nextDouble();
+		
+		if ( Balance >= amount) {
+
+			System.out.println("Available balance:" + this.Balance);
+			this.Balance -= amount;
+			System.out.println(amount + "withdrawn successfully");
+			System.out.println("remaining balance:" + this.Balance);
+		} else {
+			System.out.println("Insufficient balance");
+		}
+	}
+}

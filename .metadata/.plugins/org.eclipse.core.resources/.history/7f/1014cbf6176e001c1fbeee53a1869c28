@@ -1,0 +1,12 @@
+package com.javabasics.AccountBalance;
+
+
+
+public class Accounttest {
+	public static void main(String[] args) {
+		
+		Accountbalance accountbalance=new Accountbalance(20000);
+		accountbalance.withdraw(1000);
+		
+	}
+}

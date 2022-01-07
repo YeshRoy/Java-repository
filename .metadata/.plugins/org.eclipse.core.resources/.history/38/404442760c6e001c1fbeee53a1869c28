@@ -1,0 +1,12 @@
+package com.javabasics.AccountBalance;
+
+import java.util.Scanner;
+
+public class Accounttest {
+	public static void main(String[] args) {
+		Scanner scanner=new Scanner(System.in);
+		System.out.println("enter the amount");
+		
+		
+	}
+}
